@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- link to swiper css -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles/main.css">
+
+
+    <title>University Interview</title>
+</head>
+<body>
+    <header>
+        <nav class="links">
+            <div class="left">
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i> westkhay1982@gmail.com</a>
+                <a href="tel:+"><i class="fa-solid fa-phone"></i> 0549708561</a>
+            </div>
+            <div class="right">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+        <nav class="main-navigation">
+            <div class="logo-container">
+                <i class="fa-solid fa-u logo"></i>
+                <span>logo</span>
+            </div>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <li><a href="#" class="nav-links">about <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#" class="nav-links">admissions <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#" class="nav-links">academics <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#" class="nav-links">students <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#" class="nav-links">alumini <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#" class="nav-links">media <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#" class="cta">Enroll Now</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/black-girl-summer-city-with-laptop.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/girl-studying-with-laptop-park.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/black-girl-summer-city-with-laptop.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/girl-studying-with-laptop-park.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/black-girl-summer-city-with-laptop.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/girl-studying-with-laptop-park.jpg" alt=""></div>
+                </div>
+                <div class="swiper-content">
+                    <h1>Welcome</h1>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
