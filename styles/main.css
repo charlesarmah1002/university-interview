@@ -48,6 +48,7 @@ header {
     top: 0;
     z-index: 999;
     left: 0;
+    border-bottom: 5px solid var(--alternate-background);
 }
 header .links {
     display: flex;
@@ -279,6 +280,48 @@ section.hero {
     font-weight: 700;
 }
 
+
+section.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0 50px;
+    height: 40vh;
+    overflow: hidden;
+    background: var(--background-color);
+}
+section.about .section-content {
+    width: 100%;
+    padding: 0 50px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.about .section-content .section-title{
+    margin: 20px auto;
+}
+section.about .section-content p {
+    font-size: 1.1rem;
+    padding: 0 30px;
+}
+section.about .img {
+    position: relative;
+    min-width: 300px;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+section.about .img img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 
 /* buttons */
 .cta {
