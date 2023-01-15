@@ -11,6 +11,7 @@
     --alternate-text-color: #fff;
     --icon-color: #4A2F7C80;
     --primary-shadow: #685493;
+    --background-blur: #F4F1F680;
 }
 
 * {
@@ -323,6 +324,73 @@ section.about .img img {
     height: 100%;
 }
 
+/* new section of the homepage */
+section.news-blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50vh;
+    overflow: hidden;
+    background: var(--alternate-background);
+    color: var(--alternate-text-color);
+    padding: 20px 0;
+}
+section.news-blog .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 40vh;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+}
+section.news-blog .section-title {
+    color: inherit;
+}
+section.news-blog .container .card {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--background-blur);
+    backdrop-filter: blur(3px);
+    border-radius: 0 20px 0 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--text-color);
+}
+section.news-blog .container .card:hover {
+    scale: 1.03;
+    background: var(--background-color);
+}
+section.news-blog .container .card .img {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+section.news-blog .container .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+section.news-blog .container .card .card-content {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--background-color);
+}
+section.news-blog .container .card:hover .card-content {
+    color: var(--text-color);
+}
+
 /* buttons */
 .cta {
     padding: 10px;
@@ -337,4 +405,16 @@ section.about .img img {
     background: transparent;
     border: 2px solid;
     color: var(--text-color);
+}
+.pag-button {
+    color: var(--alternate-text-color);
+    opacity: 0.8;
+    transition: 0.5s;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background: var(--alternate-background);
+}
+.pag-button:hover {
+    opacity: 1;
 }

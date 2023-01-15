@@ -7,8 +7,10 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/Font awesome/solid.css">
-    <link rel="stylesheet" href="styles/Font awesome/brands.css">
+    <link rel="stylesheet" href="styles/Font awesome/fontawesome.css">
+
+    <!-- counter-up scripts -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     
     <!-- link to swiper css -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
@@ -57,7 +59,7 @@
     <main>
         <section class="hero">
             <!-- Swiper -->
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="img/black-girl-summer-city-with-laptop.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="img/girl-studying-with-laptop-park.jpg" alt=""></div>
@@ -79,13 +81,13 @@
 
         <sectiton class="count-up">
             <div class="count countries">
-                <h1><span id="count-countries" class="bg-text">100</span> <br> countries</h1>
+                <h1><span id="count-countries" class="bg-text counter">100</span> <br> countries</h1>
             </div>
             <div class="count students">
-                <h1><span id="count-students" class="bg-text">1000</span> <br> students</h1>
+                <h1><span id="count-students" class="bg-text counter">1000</span> <br> students</h1>
             </div>
             <div class="count" id="experience">
-                <h1><span id="count-years" class="bg-text">15</span><br>years</h1>
+                <h1><span id="count-years" class="bg-text counter">15</span><br>years</h1>
             </div>
         </sectiton>
 
@@ -99,8 +101,112 @@
             </div>
         </section>
 
-        <!-- thinking about having a news section here with a scroll -->
+        <!-- thinking about having a news section here with a swiper js -->
         <!-- haven't settled on the card design yet -->
+        <section class="news-blog">
+            <h1 class="section-title">News</h1>
+            <div class="container swiper mySwiper2">
+                <div class="swiper-wrapper">
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+                <a href="facebook.com" class="card swiper-slide">
+                    <div class="img">
+                        <img src="img/girl-studying-with-laptop-park.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>welcome to our esteemed university</p>
+                    </div>
+                </a>
+            </div>
+                
+                <div class="swiper-button-next pag-button"></div>
+                <div class="swiper-button-prev pag-button"></div>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                  var swiper = new Swiper(".mySwiper2", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    slidesPerGroup: 3,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                    },
+                    navigation: {
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                    },
+                  });
+                </script>
+            </div>
+        </section>
 
         <!-- courses -->
         <section class="courses">
@@ -172,7 +278,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper1", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -188,6 +294,20 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <!-- counter-up scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.counter').counterUp({
+            delay: 10,
+            time: 1200
+            });
+        });
     </script>
 </body>
 </html>
